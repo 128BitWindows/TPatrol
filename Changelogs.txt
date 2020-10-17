@@ -1,0 +1,59 @@
+Changelogs:
+
+=============================== [2.1] - GitHub Upload Update (10-16-20) ===============================
+New:
+
+*Deleted unnecessary files to prepare for GitHub Upload
+*Temporarily removed GPO configurations due to upload and functionality issues
+
+=============================== [2.0] - (11-27-18) ===============================
+New:
+
+*   Now creates godmode on the desktop
+*   Now has the LastActivityView in the insall folder
+*   Now has the patchMyPC in the update folder
+*   Now prompts program install at the end of script
+*   Now imports GPOs and the Windows baseline
+*   inf that supports windows 8.1 has been added
+*   Baseline for windows 8.1 has been added
+*   New administrator user spareUser has been added with the password: Password1234!@#$
+
+Bug Fixes:
+
+*   Usernames with spaces no longer glitch out
+*   Reorganized user scripts
+*   User scripts should now be properly functioning
+*   inf files on Windows 8.1 no longer crash the computer
+*   Baselines now run properly from master script
+
+=============================== [1.0] - BeGoneThot Update ===============================
+New:
+
+*   Added full user configuration
+	-added unauthorized user disable
+	-added unauthorized admin removal
+*   Updated services list from Blackviper.com
+*   Deletes tasks from task schedule
+*   Does LSP from a custom inf file
+*   Removed chocolately install
+*   Removed File Hippo
+*   Added important programs install (needs to be run manually without admin)
+
+=============================== [0.1] - Original NW Tools ===============================
+Features:
+
+*   Changes all user passwords
+*   Makes every user password expire
+*   Install Chocolatey package manager
+*   Installs a reload tool for environment
+       -Simply type "reload" after installing with Choco
+       -Instantly refreshes environment, no need to restart cmd.exe
+*   Configures services in accordance with Black Viper service list
+       -Be sure to disable Remote Desktop manually if needed
+*   Configures all auditing policies
+*   Cleans the /Windows/System32/drivers/etc/hosts file
+*   Generates reports in /triage about active shares, users, and the hosts
+*   Contains the File Hippo update manager in /update
+*   Has configurable passwords & excluded user in /config
+*   Has a script share.bat, which deletes all shares
+       -Run after running master.bat, not before
